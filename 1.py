@@ -26,3 +26,5 @@ def netcat(host, port, content):
             break
         print(repr(data))
     s.close()
+	
+I found I needed to add a time.sleep(0.5) before shutdown here, too.
